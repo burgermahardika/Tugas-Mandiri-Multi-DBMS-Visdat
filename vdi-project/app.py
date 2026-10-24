@@ -102,11 +102,4 @@ with col_b:
 
 st.subheader("📑 Tabel Data Hasil Integrasi (SQLite + PostgreSQL)")
 st.dataframe(df_filtered, use_container_width=True)
-
-st.markdown("---")
-st.markdown("### 📌 Informasi Tugas & Sitasi")
-st.info("""
-- **Arsitektur:** Multi-DBMS (SQLite untuk Master Produk, PostgreSQL untuk Transaksi)[cite: 1].
-- **Sumber Data Asli:** [Kaggle - E-Commerce Sales Dataset](https://www.kaggle.com/)[cite: 2, 3].
-- **Mata Kuliah:** Visualisasi Data dan Informasi - Program Studi Informatika[cite: 1].
 """)
