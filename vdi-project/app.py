@@ -56,11 +56,11 @@ except Exception as e:
     st.stop()
 
 # --- 2. ANTARMUKA VISUALISASI WEB (STREAMLIT) ---
-st.title("📊 Dashboard Analitik Multi-DBMS: E-Commerce")
-st.markdown("Aplikasi web interaktif ini mengintegrasikan **SQLite (Lokal)** untuk Data Master Produk dan **PostgreSQL (Cloud Supabase)** untuk Data Transaksi[cite: 1].")
+st.title("Dashboard Analitik Multi-DBMS: E-Commerce")
+st.markdown("Aplikasi web interaktif ini mengintegrasikan **SQLite (Lokal)** untuk Data Master Produk dan **PostgreSQL (Cloud Supabase)** untuk Data Transaksi.")
 
 # Sidebar Filter Interaktif
-st.sidebar.header("🎛️ Filter Interaktif")
+st.sidebar.header("Filter Interaktif")
 selected_region = st.sidebar.multiselect(
     "Pilih Wilayah (Region):",
     options=df["region"].unique(),
@@ -82,7 +82,7 @@ st.divider()
 col_a, col_b = st.columns(2)
 
 with col_a:
-    st.subheader("📈 Pendapatan Berdasarkan Kategori Produk")
+    st.subheader("Pendapatan Berdasarkan Kategori Produk")
     category_revenue = df_filtered.groupby("category")["total_revenue"].sum().reset_index()
     fig_cat = px.bar(
         category_revenue, x="category", y="total_revenue",
@@ -92,7 +92,7 @@ with col_a:
     st.plotly_chart(fig_cat, use_container_width=True)
 
 with col_b:
-    st.subheader("🌍 Distribusi Penjualan per Wilayah")
+    st.subheader("Distribusi Penjualan per Wilayah")
     region_sales = df_filtered.groupby("region")["total_revenue"].sum().reset_index()
     fig_reg = px.pie(
         region_sales, names="region", values="total_revenue", hole=0.4,
@@ -100,7 +100,7 @@ with col_b:
     )
     st.plotly_chart(fig_reg, use_container_width=True)
 
-st.subheader("📑 Tabel Data Hasil Integrasi (SQLite + PostgreSQL)")
+st.subheader("Tabel Data Hasil Integrasi (SQLite + PostgreSQL)")
 st.dataframe(df_filtered, use_container_width=True)
 st.markdown("---")
 
