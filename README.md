@@ -10,6 +10,6 @@
 * **Mata Kuliah :** Visualisasi Data
 
 ## Tautan Akses Tugas
-* **Live Web App :** [https://tugas-mandiri-multi-dbms-visdat-fkoyfenvaengcsqezqo7nh.streamlit.app](https://tugas-mandiri-multi-dbms-visdat-fkoyfenvaengcsqezqo7nh.streamlit.app)
-* **Repositori GitHub :** [https://github.com/burgermahardika/Tugas-Mandiri-Multi-DBMS-Visdat]
-* **Sumber Data Asli :** [Kaggle - Superstore Dataset](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
+* **Live Web App :** https://tugas-mandiri-multi-dbms-visdat-fkoyfenvaengcsqezqo7nh.streamlit.app
+* **Repositori GitHub :** https://github.com/burgermahardika/Tugas-Mandiri-Multi-DBMS-Visdat
+* **Sumber Data Asli :** https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
